@@ -2,6 +2,28 @@
 
 ## Conteúdo de artigos e Alura+
 
+### Shift Left
+
+- Shift Left é uma prática que consiste em deslocar para a esquerda as atividades testes, segurança e deploy, que normalmente estão mais à direita no processo, para que assim desde o ínicio de cada ciclo elas possam ser discutidas e planejadas, evitando problemas e acelerando a entrega de software.
+
+### Cloud: o que é, História e Guia da computação em nuvem
+[Artigo](https://encurtador.com.br/awPX6)
+
+### Git Flow versus Trunk-based development
+
+- Git Flow: É um modelo alternativo de ramificação do Git que consiste no uso de ramificações de recursos e várias ramificações primárias.
+
+    - Com o Git Flow, é fácil para os desenvolvedores trabalharem em suas próprias funcionalidades em seu próprio ritmo, pois cada funcionalidade tem sua própria branch.
+
+- Trunk-based: É uma estratégia que tenta minimizar a complexidade de lidar com múltiplos branches. Nesta abordagem, todos os desenvolvedores trabalham em uma única branch – o tronco (trunk/master/main).
+
+    - Trunk Based Development incentiva uma cultura de entrega contínua, onde o código é integrado e testado frequentemente. Isso pode resultar em um ritmo de desenvolvimento mais rápido, mas também requer uma disciplina rigorosa de testes e integração.
+
+### O que é Infraestrutura como Código(IaC)?
+
+- Infraestrutura como Código(IaC): é um processo de gerenciamento de infraestrutura de TI que aplica as práticas recomendadas do desenvolvimento de software DevOps ao gerenciamento de recursos de infraestrutura de nuvem.
+
+
 ### DevSecOps
 
 - DevSecOps é a camada de segurança do DevOps.
@@ -17,16 +39,6 @@
     - Confiabilidade
 
 - Em resumo, a camada de segurança, na prática entra diretamente na pipeline, com checks (auditorias e scanners de vírus) de arquivos maliciosos antes de subir a aplicação, por exemplo.
-
-### SRE (Site Reliability Engineering) - Engenharia de Confiabilidade de Sites
-
-- O embate entre Desenvolvedores e Infra acontecem no ponto de **"Confiabilidade"**. (Como você pode assegurar que seu software é confiável?)
-
-- Nesse cenário nasce o SRE, pra que se consiga deixar esse deploy mais confiável e seguro. (Foi desenvolvida essa disciplina pelo Google)
-
-- Ajuda a obter métricas para trazer informações de confiabilidade. Seu ponto forte é a **Observabilidade**.
-
-- Quatro sinais de ouro do SRE: Latência, Tráfego, Erros e Saturação.
 
 ### Observabilidade
 
@@ -51,21 +63,8 @@
 
 - Para trabalhar com logs pode-se usar: Sidecar, Logging agent instalado no host, Shell script. Uma ferramenta para ser utilizada é o Graylog.
 
-### 4 Golden Signals
-
-- Latência, Tráfego, Erros e Saturação. Esses sinais podem ser observados através do Grafana.
-
-### Monitoramento com Netdata
-
-    - Netdata é uma ferramenta de monitoramento (entendimento de como nossa aplicação e ambiente estão se comportando). É uma ferramenta open source.
-
-    - Requisitos (Máquina Linux)
-
-    - Comandos de instalação na documentação do site Netdata. [Clique Aqui](https://www.netdata.cloud)
-
-    - SLA: Métricas de contrato
-
-    - O Netdata já possui nativamente sistemas de alarmes em situações configuradas.
+### O que são Feature Flags ou Feature Toggles?
+[Artigo](https://encurtador.com.br/BNS37)
 
 ### O que são Containers?
 
@@ -88,3 +87,14 @@
     - Alguns provedores desse serviço são: Amazon webserver, Microsoft Azure, Google Cloud.
 
     - Componentes Serverless: Lambda, API Gateway, SQS, DynamoDB, SNS, S3.
+
+
+### SRE (Site Reliability Engineering) - Engenharia de Confiabilidade de Sites
+
+- O embate entre Desenvolvedores e Infra acontecem no ponto de **"Confiabilidade"**. (Como você pode assegurar que seu software é confiável?)
+
+- Nesse cenário nasce o SRE, pra que se consiga deixar esse deploy mais confiável e seguro. (Foi desenvolvida essa disciplina pelo Google)
+
+- Ajuda a obter métricas para trazer informações de confiabilidade. Seu ponto forte é a **Observabilidade**.
+
+- Quatro sinais de ouro do SRE: Latência, Tráfego, Erros e Saturação.
